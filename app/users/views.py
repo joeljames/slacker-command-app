@@ -27,7 +27,7 @@ class UserView(MethodView):
         print(request.form)
         print('request.values-----------')
         print(request.values)
-        request_body = request.get_json()
+        request_body = request.form
         print('Printing the request body----')
         print(request_body)
         request_token = request_body.get('token')
