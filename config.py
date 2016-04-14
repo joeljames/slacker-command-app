@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'default_secret_key')
 
 # Slack config
 SLACK_REQUEST_TOKEN = os.environ.get(
-    'REQUEST_TOKEN',
+    'SLACK_REQUEST_TOKEN',
     'default_slack_request_token'
 )
 SLACK_TOKEN = os.environ.get('SLACK_TOKEN')
