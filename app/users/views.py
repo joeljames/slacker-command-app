@@ -21,15 +21,7 @@ class UserView(MethodView):
         self.logger = logger or get_logger('views')
 
     def post(self):
-        print('request.data-----------')
-        print(request.data)
-        print('request.form -----------')
-        print(request.form)
-        print('request.values-----------')
-        print(request.values)
         request_body = request.form
-        print('Printing the request body----')
-        print(request_body)
         request_token = request_body.get('token')
         username = request_body.get('text')
         # Make sure the resquest is coming from your team
