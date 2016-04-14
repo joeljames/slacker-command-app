@@ -1,1 +1,3 @@
-# slacker-command-app
+Simple slack slash command app.
+
+## Getting Started

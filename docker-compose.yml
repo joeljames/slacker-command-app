@@ -1,0 +1,8 @@
+web:
+  extends:
+    file: docker-compose-base.yml
+    service: web
+  ports:
+    - "8000:8000"
+  environment:
+    VIRTUAL_HOST: slacker-command.docker

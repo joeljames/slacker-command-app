@@ -1,0 +1,7 @@
+# Base Libraries
+flask==0.10.1
+six==1.10.0
+slackclient==1.0.0
+
+# Server
+gunicorn==19.1.1
