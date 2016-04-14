@@ -22,6 +22,8 @@ class UserView(MethodView):
 
     def post(self):
         request_body = request.get_json()
+        print('Printing the request body----')
+        print(request_body)
         request_token = request_body.get('token')
         username = request_body.get('text')
         # Make sure the resquest is coming from your team
