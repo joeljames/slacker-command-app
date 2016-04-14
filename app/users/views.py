@@ -21,6 +21,12 @@ class UserView(MethodView):
         self.logger = logger or get_logger('views')
 
     def post(self):
+        print('request.data-----------')
+        print(request.data)
+        print('request.form -----------')
+        print(request.form)
+        print('request.values-----------')
+        print(request.values)
         request_body = request.get_json()
         print('Printing the request body----')
         print(request_body)
