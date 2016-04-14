@@ -41,22 +41,24 @@ Below are the steps to build and get the container up and running.
 
 A list of make commands are available for managing tasks. You can view the list by running `make help` command.
 
-1. Setup environment. Make sure to manually configure the required env variables in `env.ini` file after running the command below.
+1. Generate the slack token [here](https://api.slack.com/web#authentication). Set this token in the `env.ini` file after completing step 2
+
+2. Setup environment. Make sure to manually configure the required env variables in `env.ini` file after running the command below.
 
     ``` bash
     $ make copy_env
     ```
 
-2. Build the image:
+3. Build the image:
 
     ``` bash
     $ docker-compose build
     ```
 
-3. Start the server:
+4. Start the server:
 
     ``` bash
     $ docker-compose up
     ```
 
-4. Check the server is up and running by hitting the url POST `http://slacker-command.docker/`.
+5. Check the server is up and running by hitting the url POST `http://slacker-command.docker/`.
